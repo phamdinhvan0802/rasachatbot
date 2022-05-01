@@ -1,0 +1,74 @@
+﻿version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Chào bạn, cảm ơn bạn đã quan tâm đến Gà Ngon. Chúng tôi có thể giúp gì cho bạn ạ?"
+
+  utter_cheer_up:
+  - text: "Cửa hàng của chúng tôi chuyên cung cấp dịch vụ về đồ ăn nhanh như gà rán, hamburger,... Phương châm của chúng tôi là: Chất lượng tốt, Giao hàng nhanh, Dịch vụ có tâm. Đ/C: Phụng Sơn - Phước Sơn - Tuy Phước - Bình Định. Chủ cửa hàng: Phạm Thị Hết. Facebook: https://www.facebook.com/vanpham.0802"
+    image: "https://imgur.com/9sCOnEd.jpg"
+
+  utter_did_that_help:
+  - text: "Ảnh minh họa cửa hàng của chúng tôi"
+
+  utter_happy:
+  - text: "Tại đây mình có bán tất cả các loại đồ ăn nhanh như: Hamburger, Mì ý, ... nhưng đặc biệt nhất là món Gà Rán, bạn tham khảo hình bên dưới nhé."
+    image: "https://imgur.com/Ejv9MQh.png"
+
+  utter_goodbye:
+  - text: "Cảm ơn khách hàng đã sử dụng dịch vụ tại cửa hàng chúng tôi. Chúc quý khách một ngày vui vẻ!!"
+
+  utter_iamabot:
+  - text: "Có 3 hình thức thanh toán bạn nhé:
+        - Thanh toán trực tiếp
+        - Thanh toán qua Momo (0376558653 - Phạm Đình Văn)
+        - Thanh toán qua ngân hàng (58010001325148 - BIDV - PHAM DINH VAN)"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+  intents:
+    - greet
+    - goodbye
+    - thankyou
+    - praise
+    - decry
+    - ask_for_lunch
+    - ask_ability
+  responses:
+  utter_greet:
+  - text: "Em chào anh(chị) ạ. \nEm là chatbot được thiết kế để giúp anh chị quyết\
+      \ định 'trưa nay ăn gì?' ạ"
+  utter_goodbye:
+  - text: Hẹn gặp lại anh chị ạ ^^
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_happy:
+  - text: Hì hì, anh chị khen quá lơì rồi ạ
+  utter_sorry:
+  - text: Em xin lôĩ vì em chưa đủ thông minh ạ =(((
+  utter_noworries:
+  - text: Em luôn sẵn lòng giúp đỡ anh(chị) bất cứ lúc nào ạ ^^
+  utter_show_ability:
+  - text: Em có thể trò chuyện với anh(chị), thi thoảng có thể đề xuất anh(chị) nên
+      ăn gì trưa nay ạ
+  utter_fallback:
+  - text: Em xin lỗi, em chưa hiểu ý muốn của anh(chị) ạ. Anh chị có thể nói lại được
+      không ạ
+actions:
+- utter_greet
+- utter_happy
+- utter_goodbye
+- utter_sorry
+- utter_noworries
+- action_recommend
+- utter_show_ability
+- utter_fallback

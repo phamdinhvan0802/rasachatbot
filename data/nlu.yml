@@ -1,0 +1,119 @@
+﻿version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - chào em
+    - hello em
+    - hi em
+    - em ơi, cho anh hỏi
+    - bot ơi
+    - cho mình hỏi chút
+    - bạn gì đó ơi
+    - chào shop
+    - chào bạn
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - good bye
+    - bye bye
+    - tạm biệt em
+    - tạm biệt bot nhá
+    - cảm ơn bạn
+    - cảm ơn shop
+    - cảm ơn
+    - thank you
+    - thanks
+
+- intent: affirm 
+  examples: |
+    #- yes
+    #- y
+    #- indeed
+    #- of course
+    #- that sounds good
+    #- correct
+    - xem menu
+    - menu
+    - ở đây có bán gì ạ?
+    - tôi muốn mua hàng
+    - tại đây có bán những món gì vậy ạ?
+
+#- intent: deny
+#  examples: |
+#    - no
+#    - n
+#    - never
+#    - I don't think so
+#    - don't like that
+#    - no way
+#    - not really
+
+#- intent: mood_great
+#  examples: |
+#    - perfect
+#    - great
+#    - amazing
+#    - feeling like a king
+#    - wonderful
+#    - I am feeling very good
+#    - I am great
+#    - I am amazing
+#    - I am going to save the world
+#    - super stoked
+#    - extremely good
+#    - so so perfect
+#    - so good
+#    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    #- my day was horrible
+    #- I am sad
+    #- I don't feel very well
+    #- I am disappointed
+    #- super sad
+    #- I'm so sad
+    #- sad
+    #- very sad
+    #- unhappy
+    #- not good
+    #- not very good
+    #- extremly sad
+    #- so saad
+    #- so sad
+    - cửa hàng của bạn ở đâu
+    - Giới thiệu về cửa hàng của bạn đi
+    - bạn có thể cho tôi biết thông tin về cửa hàng được không
+
+- intent: bot_challenge
+  examples: |
+    #- are you a bot?
+    #- are you a human?
+    #- am I talking to a bot?
+    #- am I talking to a human?
+    - thanh toán như thế nào
+    - thanh toán qua đâu ạ
